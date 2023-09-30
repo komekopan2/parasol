@@ -1,0 +1,37 @@
+.inner{
+    display: block;
+    max-inline-size: max-content;
+    margin-inline: auto;
+}
+.topNavigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.txtButton{
+    color: #0A84FF;
+    cursor: pointer;
+}
+
+.camera{
+    position: relative;
+}
+
+.txtBox{
+    position: absolute;
+    bottom: 0px;
+
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(28,28,30,0.5);
+
+    width: 100%;
+    height: fit-content;
+    padding: 8px;
+}
+
+.indicater{
+    color: #fff;
+    font-weight: lighter;
+}

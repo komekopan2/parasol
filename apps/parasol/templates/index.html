@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='common.css') }}" />
+</head>
+
+<body>
+    <div class="inner">
+        <div class="topNavigation">
+            <p alt="もう一度読み上げる ボタン" class="txtButton">もう一度</p>
+            <p alt="ギャラリーの画像を使う　ボタン" class="txtButton">ギャラリー</p>
+        </div>
+        <div class="camera">
+            <a id="shutter" onclick="onClickVideo()">
+                <video id="video"></video>
+            </a>
+            <div class="txtBox">
+                <p class="indicater">ここに読み上げられるテキストがきます</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+</body>
+
+</html>
